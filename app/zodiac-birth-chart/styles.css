@@ -1,0 +1,19 @@
+/* Global Styles */
+@font-face {
+  font-family: 'PixelFont';
+  src: url('fonts/pixel-font.woff2') format('woff2'),
+       url('fonts/pixel-font.woff') format('woff');
+}
+
+body {
+  background-color: grey;
+  margin: 0;
+  padding: 20px;
+  font-family: 'PixelFont', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 极光
+}
