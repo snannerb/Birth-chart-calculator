@@ -1,0 +1,17 @@
+{
+  "name": "birth-chart-calculator",
+  "version": "1.0.0",
+  "description": "A modern birth chart calculator using Swiss Ephemeris",
+  "type": "module",
+  "scripts": {
+    "start": "node api/index.js",
+    "build": "mkdir -p public && cp -r src/* public/ && cp index.html public/",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "vercel": "^24.0.0"
+  }
+} 

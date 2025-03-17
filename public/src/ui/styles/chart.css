@@ -1,0 +1,88 @@
+/* Chart Container Styles */
+#chartContainer {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#birthChart {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Legend Container Styles */
+#legendContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Interpretations Styles */
+.interpretations {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.interpretations h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#interpretationList {
+    list-style: none;
+    padding: 0;
+}
+
+#interpretationList li {
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+#interpretationList li strong {
+    color: #FFD700;
+}
+
+/* Loading Indicator Styles */
+#loadingIndicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#loadingIndicator p {
+    margin: 0;
+    font-size: 18px;
+} 

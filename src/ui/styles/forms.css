@@ -1,0 +1,100 @@
+/* Form Container Styles */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Input Styles */
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+}
+
+select:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFD700;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC000;
+}
+
+button:active {
+    background-color: #DAA520;
+}
+
+/* Custom Location Styles */
+.location-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+#showCustomLocation {
+    background-color: #444;
+    color: #fff;
+}
+
+#showCustomLocation:hover {
+    background-color: #555;
+}
+
+#customLocationInputs {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .location-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+} 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birth Chart Calculator</title>
+  <link rel="stylesheet" href="src/ui/styles/forms.css">
+  <link rel="stylesheet" href="src/ui/styles/chart.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Birth Chart Calculator</h1>
+    <form id="birthChartForm">
+      <div class="form-group">
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" required>
+      </div>
+      <div class="form-group">
+        <label for="birthTime">Birth Time:</label>
+        <input type="time" id="birthTime" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter city name" required>
+      </div>
+      <button type="submit">Calculate Chart</button>
+    </form>
+    <div id="results" style="display: none;">
+      <div id="chartContainer">
+        <canvas id="birthChart" width="600" height="600"></canvas>
+      </div>
+      <div class="interpretations">
+        <h2>Interpretations</h2>
+        <div id="interpretationList"></div>
+      </div>
+    </div>
+  </div>
+  <div id="loadingIndicator" style="display: none;">
+    Calculating planetary positions...
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swisseph@0.5.17/dist/swisseph.min.js"></script>
+  <script type="module" src="src/script.js"></script>
+</body>
+</html>
